@@ -184,16 +184,14 @@ void endEvent() {
 
         if (result == 0) {
             cout << "The result of " << event_name << " is: " << "Draw" << endl;
-        } else if (result == 1) {
-            cout << "The result of " << event_name << " is: " << result << endl;
-        } else if (result == 2) {
+        } else if (result == 1 || result == 2) {
             cout << "The result of " << event_name << " is: " << result << endl;
         }
 
         // finding the bets on the ended event and processing them based on the result
         for (auto &bet: bets) {
             if (bet.event == event_name) {
-                float winnings = 0;
+                float winnings;
                 SportsEvent event;
 
                 for (auto &ended_event: events) {
