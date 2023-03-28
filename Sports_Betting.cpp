@@ -3,8 +3,8 @@
 
 using namespace std;
 
-void addSportEvent();
-void displaySportEvents();
+void setSportEvents();
+void getSportEvents();
 void filterEventsBySport();
 void filterEventsByCoeff();
 void placeBet();
@@ -30,10 +30,10 @@ int main() {
 
         switch (choice) {
             case 1:
-                addSportEvent();
+                setSportEvents();
                 break;
             case 2:
-                displaySportEvents();
+                getSportEvents();
                 break;
             case 3:
                 filterEventsBySport();

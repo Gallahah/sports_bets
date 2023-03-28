@@ -12,7 +12,7 @@ vector<SportsEvent> events; // storing the active events
 
 // events
 // function to add a new event
-void addSportEvent() {
+void setSportEvents() {
     SportsEvent event;
 
     cout << "Enter the name of the first team: ";
@@ -63,7 +63,7 @@ void addSportEvent() {
 }
 
 // function to display all events
-void displaySportEvents() {
+void getSportEvents() {
     if (events.empty()) {
         cout << "There are no upcoming events." << endl;
         return;
